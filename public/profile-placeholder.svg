@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Profile photo placeholder</title>
+  <desc id="desc">A neutral silhouette on a grey background, to be replaced with a personal photograph.</desc>
+  <rect width="640" height="640" fill="#e7e8e6"/>
+  <circle cx="320" cy="250" r="106" fill="#c8cbc7"/>
+  <path d="M92 640v-52c0-137 86-240 228-240s228 103 228 240v52" fill="#b5bbb5"/>
+  <text x="36" y="54" font-family="Arial,sans-serif" font-size="18" letter-spacing="2" fill="#535c57">YOUR PHOTO GOES HERE</text>
+</svg>
