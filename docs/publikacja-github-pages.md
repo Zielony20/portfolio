@@ -4,9 +4,9 @@ Instrukcja dla tego projektu, sprawdzona 14/10/2026. Strona to statyczna aplikac
 
 ## 1. Wybierz adres i utwórz repozytorium
 
-Dla Twojego portfolio proponuję repozytorium **Zielony20.github.io**. Przewidywany adres strony: **https://zielony20.github.io/**.
+Wybrane przez Ciebie repozytorium: **Zielony20/portfolio**. Przewidywany adres strony: **https://zielony20.github.io/portfolio/**.
 
-Alternatywnie możesz nazwać repozytorium `portfolio`; wtedy przewidywany adres to **https://zielony20.github.io/portfolio/**. Przygotowany workflow odczytuje bazową ścieżkę z konfiguracji Pages i obsługuje oba warianty. Linki między sekcjami używają kotwic, więc nie wymagają konfiguracji routingu serwera.
+Alternatywnie repozytorium `Zielony20.github.io` pozwala używać adresu **https://zielony20.github.io/**. Przygotowany workflow odczytuje bazową ścieżkę z konfiguracji Pages i obsługuje oba warianty. Linki między sekcjami używają kotwic, więc nie wymagają konfiguracji routingu serwera.
 
 Na GitHubie wybierz **New repository**, wpisz wybraną nazwę i ustaw **Public**. Przy tworzeniu zostaw wyłączone dodawanie README, licencji i `.gitignore`, ponieważ lokalny projekt już ma pliki. Jeśli repozytorium o tej nazwie istnieje, użyj innej nazwy albo najpierw sprawdź jego zawartość.
 
@@ -34,13 +34,29 @@ Następnie:
 
 ```bash
 git commit -m "Add personal portfolio"
-git remote add origin https://github.com/Zielony20/Zielony20.github.io.git
+git remote add origin https://github.com/Zielony20/portfolio.git
 git push -u origin main
 ```
 
-Jeśli wybrałeś nazwę `portfolio`, w poleceniu `git remote add` użyj `https://github.com/Zielony20/portfolio.git`. Uwierzytelnij Git swoim skonfigurowanym sposobem logowania. Jeśli Git pyta o autora commita, ustaw lokalnie `git config user.name "Piotr Sikora-Malach"` oraz `git config user.email "piotrsikora98@gmail.com"`, po czym ponów commit.
+Jeśli `origin` już istnieje i wskazuje inne repozytorium, zmień adres poleceniem `git remote set-url origin https://github.com/Zielony20/portfolio.git`. Uwierzytelnij Git swoim skonfigurowanym sposobem logowania. Jeśli Git pyta o autora commita, ustaw lokalnie `git config user.name "Piotr Sikora-Malach"` oraz `git config user.email "piotrsikora98@gmail.com"`, po czym ponów commit.
 
 `git init` wykonujesz tylko raz dla tego katalogu. Jeśli później repozytorium jest już zainicjalizowane, sprawdź `git status` i `git remote -v`, zamiast powtarzać konfigurację.
+
+### Gdy GitHub odrzuca hasło
+
+Przy zdalnym adresie HTTPS pole `Password` wymaga tokenu, a nie hasła do konta. [Uwierzytelnianie Git](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github).
+
+1. Otwórz GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.
+2. Ustaw nazwę `portfolio-push`, termin ważności np. 30 dni i Resource owner: `Zielony20`.
+3. W Repository access wybierz Only select repositories i zaznacz `portfolio`. Wybrane repozytorium musi odpowiadać adresowi `git remote -v`.
+4. Dodaj uprawnienia repozytorium Contents: Read and write oraz Workflows: Write, ponieważ commit zawiera `.github/workflows/pages.yml`.
+5. Wygeneruj token i skopiuj go. Przy ponownym `git push -u origin main` podaj Username: `Zielony20`, a w polu Password wklej token. W terminalu znaki hasła/tokenu nie są wyświetlane.
+
+Token wpisz wyłącznie w polu hasła Git; nie umieszczaj go w adresie origin ani w plikach projektu. [Tworzenie tokenu i wybór uprawnień](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+
+### Gdy pojawia się 403: Write access to repository not granted
+
+Sprawdź konto, na którym utworzono token, Resource owner: `Zielony20`, dostęp do repozytorium `portfolio` i uprawnienia Contents: Read and write oraz Workflows: Write. Po zmianie konfiguracji tokenu zapisz ją; jeśli generujesz nowy token, użyj nowej wartości w polu Password. Samo wpisanie Username: `Zielony20` nie zmienia konta, do którego należy token.
 
 ## 3. Włącz hosting
 
