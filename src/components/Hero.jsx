@@ -3,7 +3,7 @@ import { ProfileCardCarousel } from './ui/profile-card-testimonial-carousel';
 
 const slides = [
   { id: 'backend', label: 'Backend', title: 'Microservices and backend development.',
-    description: 'Since February 2023, I have worked on cybersecurity projects at Nokia, including EDR and compliance tools. I design and implement microservices, write tests, fix bugs and participate in code reviews. My main backend language is Go.',
+    description: 'Since February 2023, I have worked on cybersecurity projects at Nokia. I design and implement microservices, write tests, fix bugs and participate in code reviews. My main backend language is Go.',
     href: '#experience', linkLabel: 'Explore my experience' },
   { id: 'infrastructure', label: 'DevOps & Security', title: 'Infrastructure, automation and security.',
     description: 'I work with Kubernetes, Helm, Terraform and Ansible. I combine backend development with security and diagnostics: least privilege, log forwarding, Prometheus alerts and Grafana dashboards.',

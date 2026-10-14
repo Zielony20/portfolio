@@ -14,6 +14,8 @@ dist-ssr
 
 # Local interview notes, excluded from the public portfolio repository
 docs/rekrutacja/
+# Local verification artifacts may contain superseded portfolio copy
+docs/evidence/
 
 # Editor directories and files
 .vscode/*

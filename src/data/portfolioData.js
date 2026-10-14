@@ -8,12 +8,12 @@ export const personalData = {
   phone: '+48 697 358 952',
   linkedin: 'https://www.linkedin.com/in/piotr-sikora/',
   github: 'https://github.com/Zielony20',
-  bio: 'Since February 2023, I have worked as a Fullstack Software Engineer at Nokia on cybersecurity projects, including EDR and compliance tools. I combine backend development in Go, Java and Python with DevOps and security. My work includes microservice development and adapting agent installation workflows to non-root requirements. I also created the entire bienvenidosprimavera.pl platform, from application code and API integrations to infrastructure.',
+  bio: 'Since February 2023, I have worked as a Fullstack Software Engineer at Nokia on cybersecurity projects. I combine backend development in Go, Java and Python with DevOps and security. My work includes microservice development and adapting agent installation workflows to non-root requirements. I also created the entire bienvenidosprimavera.pl platform, from application code and API integrations to infrastructure.',
   stats: [
     { label: 'PrimaVera users', value: '~40' },
     { label: 'PrimaVera backend', value: 'Go / Gin / PostgreSQL' },
     { label: 'PrimaVera infrastructure', value: 'Kubernetes / Helm / Terraform' },
-    { label: 'Nokia experience', value: 'Cybersecurity / Compliance' },
+    { label: 'Nokia experience', value: 'Cybersecurity' },
   ],
 };
 
@@ -131,10 +131,10 @@ export const experienceTimeline = [
     company: 'Nokia Solutions And Networks Sp. z o.o.',
     period: '02/2023 - present',
     location: 'Poznań',
-    description: 'Software development across cybersecurity projects, including EDR and compliance tools. English-speaking working environment, with English at B2 level (self-assessed).',
+    description: 'Software development across cybersecurity projects. English-speaking working environment, with English at B2 level (self-assessed).',
     bulletPoints: [
-      'Adapted the EDR agent installation process to a customer requirement for non-root execution by identifying commands requiring sudo and limiting elevated privileges.',
-      'Designed and implemented EDR microservices, fixed bugs, prepared tests and technical documentation, and participated in code reviews.',
+      'Adapted an agent installation process to a customer requirement for non-root execution by identifying commands requiring sudo and limiting elevated privileges.',
+      'Designed and implemented microservices, fixed bugs, prepared tests and technical documentation, and participated in code reviews.',
       'Proposed architectural solutions and adapted installation workflows to evolving deployment mechanisms.',
       'Worked with Java, Go, Python, Lua, Ansible, Kubernetes, Helm, Terraform and kpt, with occasional use of eBPF.',
       'Collaborated and communicated technical information in English.',
