@@ -1,4 +1,4 @@
-# Piotr Sikora-Malach | Portfolio
+# Portfolio
 
 Personal portfolio built with React and Vite. English content, a profile carousel, a detailed PrimaVera case study, work experience, education and a printable CV preview.
 
