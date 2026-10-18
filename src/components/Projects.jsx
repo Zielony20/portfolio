@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { featuredProjects } from '../data/portfolioData';
-import { ArrowUpRight, ExternalLink, Layers, Image as ImageIcon, Sparkles } from 'lucide-react';
+import { ArrowUpRight, ExternalLink } from 'lucide-react';
 
 function resolveAsset(path) {
   if (!path) return '';
@@ -22,10 +22,6 @@ function ProjectDiagrams({ diagrams, projectId }) {
     <div className="project-diagrams-container">
       <div className="diagram-header">
         <div className="diagram-header-info">
-          <div className="diagram-badge">
-            <Layers size={13} aria-hidden="true" />
-            <span>{current.badge}</span>
-          </div>
           <h4>{current.title}</h4>
           <p>{current.description}</p>
         </div>
@@ -52,18 +48,14 @@ function ProjectDiagrams({ diagrams, projectId }) {
               type="button"
               className={`diagram-mode-btn ${viewMode === 'image' ? 'active' : ''}`}
               onClick={() => setViewMode('image')}
-              title="Tradycyjny widok graficzny"
             >
-              <ImageIcon size={13} aria-hidden="true" />
-              <span>Graphic</span>
+              <span>Image</span>
             </button>
             <button
               type="button"
               className={`diagram-mode-btn ${viewMode === 'interactive' ? 'active' : ''}`}
               onClick={() => setViewMode('interactive')}
-              title="Interaktywny model z zoomem i badaniem zależności"
             >
-              <Sparkles size={13} aria-hidden="true" />
               <span>Interactive</span>
             </button>
           </div>
@@ -73,7 +65,7 @@ function ProjectDiagrams({ diagrams, projectId }) {
             target="_blank"
             rel="noopener noreferrer"
             className="diagram-open-btn"
-            title="Open interactive diagram in full window"
+            title="Open diagram in full window"
           >
             <span>Full Diagram</span>
             <ExternalLink size={14} aria-hidden="true" />
@@ -86,7 +78,7 @@ function ProjectDiagrams({ diagrams, projectId }) {
           <div className="diagram-image-container">
             <img
               src={resolveAsset(current.imageSrc)}
-              alt={`${current.title} interactive architecture model`}
+              alt={`${current.title} architecture diagram`}
               className="diagram-static-img"
               loading="lazy"
             />
@@ -96,8 +88,7 @@ function ProjectDiagrams({ diagrams, projectId }) {
                 className="diagram-interactive-launch-btn"
                 onClick={() => setViewMode('interactive')}
               >
-                <Sparkles size={13} aria-hidden="true" />
-                <span>Uruchom model interaktywny (Archify)</span>
+                <span>Explore interactive model</span>
               </button>
             </div>
           </div>
@@ -110,14 +101,11 @@ function ProjectDiagrams({ diagrams, projectId }) {
             sandbox="allow-scripts allow-same-origin allow-popups"
           />
         )}
-        <div className="diagram-footer-hint">
-          {viewMode === 'image' ? (
-            <span>Tradycyjny widok graficzny · Kliknij „Uruchom model interaktywny”, aby badać zależności i zoomować na żywo</span>
-          ) : (
-            <span>Interaktywny model architektury wygenerowany z Archify · Obsługa zoom i pan · Klikaj elementy, by badać zależności</span>
-          )}
-          <span className="diagram-hint-tag">Archify v3.1</span>
-        </div>
+        {viewMode === 'interactive' && (
+          <div className="diagram-footer-hint">
+            <span>Interactive model · Pan and zoom enabled · Click nodes to inspect dependencies</span>
+          </div>
+        )}
       </div>
     </div>
   );
