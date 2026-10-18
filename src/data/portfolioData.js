@@ -8,11 +8,11 @@ export const personalData = {
   phone: '+48 697 358 952',
   linkedin: 'https://www.linkedin.com/in/piotr-sikora/',
   github: 'https://github.com/Zielony20',
-  bio: 'Since February 2023, I have worked as a Fullstack Software Engineer at Nokia on cybersecurity projects. I combine backend development in Go, Java, Rust and Python with cloud infrastructure and workflow automation. I am the creator of the bienvenidosprimavera.pl platform (with n8n business automations) and BetterMe, an end-to-end habit and biometric tracking platform with an asynchronous Rust backend and Android client.',
+  bio: 'Since February 2023, I have worked as a Fullstack Software Engineer at Nokia on cybersecurity projects. I combine backend development in Go, Java, Rust and Python with cloud infrastructure and workflow automation. I am the creator of the bienvenidosprimavera.pl platform (with n8n business automations) and BetterMe, a personal focus and digital wellness platform powered by an asynchronous Rust backend, React dashboard, and local Laya AI classification.',
   stats: [
     { label: 'PrimaVera users', value: '~40' },
     { label: 'PrimaVera & Automation', value: 'Go / PostgreSQL / n8n' },
-    { label: 'BetterMe platform', value: 'Rust / Android / React / KinD' },
+    { label: 'BetterMe platform', value: 'Rust / React / Laya AI' },
     { label: 'Nokia experience', value: 'Cybersecurity & Cloud' },
   ],
 };
@@ -20,18 +20,18 @@ export const personalData = {
 export const featuredProjects = [
   {
     id: 'better-me',
-    title: 'BetterMe | Holistic Health & Activity Platform',
-    subtitle: 'An end-to-end self-improvement and biometric tracking system with a Rust backend and Android client',
-    category: 'Backend · Rust · Mobile · Cloud',
-    description: 'I created BetterMe to track and analyze personal health indicators, sleep stages, screen time, and focus habits with total privacy and local data ownership. The platform features an asynchronous, high-throughput Rust backend, a native Android companion application with background synchronization, a modern React web dashboard, and automated Kubernetes deployments.',
+    title: 'BetterMe | Personal Focus & Digital Wellness Platform',
+    subtitle: 'A full-stack ecosystem with an async Rust backend, React dashboard, and local Laya AI classification',
+    category: 'Backend · Rust · React · Local AI',
+    description: 'I created BetterMe to help users regain deep focus and control over digital habits with total privacy. The platform blocks short-form video (Reels, Shorts) and distracting websites across browsers and mobile devices, organizes golden hours (deep-work sessions), and monitors daily activity rhythms. It is built with an asynchronous Rust backend (Axum/Tokio), a modern React web dashboard, and an on-premise Laya AI model (Ollama) for private content classification.',
     status: 'My own active platform',
     link: 'https://bienvenidosprimavera.online',
     linkLabel: 'Visit bienvenidosprimavera.online',
-    cvDescription: 'Designed and implemented the complete BetterMe ecosystem: high-performance asynchronous Rust backend (Axum, Tokio, SQLx, PostgreSQL/SQLite), native Android companion application (Kotlin, Jetpack Compose, WorkManager), React/TypeScript dashboard, Chrome extension, and containerized deployment with KinD/Kubernetes and automated backup verification.',
+    cvDescription: 'Designed and implemented the complete BetterMe ecosystem: high-performance asynchronous Rust backend (Axum, Tokio, SQLx, PostgreSQL), local Laya AI decision model (Ollama) for on-premise content classification, React/TypeScript dashboard, native Android companion application, Chrome extension, and automated KinD/Kubernetes safe deployment.',
     highlights: [
-      'High-throughput asynchronous Rust backend with Axum, Tokio, and SQLx handling continuous sensor streams.',
-      'Native Android client featuring Jetpack Compose and WorkManager for resilient offline-first synchronization.',
-      'Containerized microservice architecture on Kubernetes (KinD) with automated health monitoring and safe deployment workflows.',
+      'High-throughput asynchronous Rust backend with Axum, Tokio, and SQLx handling continuous activity streams.',
+      'On-premise AI topic classification using the local Laya model (Ollama) ensuring zero data leakage to external clouds.',
+      'Modern React web dashboard combined with native Android (Compose) and Chrome MV3 companion clients.',
     ],
     diagrams: [
       {
@@ -81,7 +81,7 @@ export const featuredProjects = [
       },
     ],
     publicScopeNote: 'Full-stack platform created and actively maintained by Piotr Sikora-Malach.',
-    tags: ['Rust', 'Axum', 'Tokio', 'SQLx', 'PostgreSQL', 'SQLite', 'Android', 'Kotlin', 'Jetpack Compose', 'WorkManager', 'React', 'TypeScript', 'Tailwind CSS', 'Docker', 'Kubernetes', 'KinD', 'Chrome Extension', 'REST API'],
+    tags: ['Rust', 'Axum', 'Tokio', 'SQLx', 'PostgreSQL', 'Laya AI', 'Ollama', 'React', 'TypeScript', 'Tailwind CSS', 'Android', 'Kotlin', 'Jetpack Compose', 'WorkManager', 'Docker', 'Kubernetes', 'KinD', 'Chrome Extension', 'REST API'],
   },
   {
     id: 'primavera',

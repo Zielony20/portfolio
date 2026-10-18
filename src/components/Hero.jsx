@@ -21,8 +21,8 @@ const slides = [
   {
     id: 'betterme',
     label: 'BetterMe',
-    title: 'Full-stack habit & sleep tracking platform.',
-    description: 'I created BetterMe: a high-throughput asynchronous Rust backend (Axum/Tokio), native Android companion app (Compose/WorkManager), React dashboard, and KinD container orchestration.',
+    title: 'Personal focus & habit platform with local AI.',
+    description: 'I created BetterMe to help regain digital focus: it blocks online distractions and short-form video (Reels, Shorts), tracks deep-work sessions, and monitors daily screen-time rhythms. Built with an asynchronous Rust backend, a modern React dashboard, and the local Laya AI model (Ollama) for on-premise content classification.',
     href: '#projects',
     linkLabel: 'Explore BetterMe architecture',
   },
