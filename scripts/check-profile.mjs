@@ -19,8 +19,7 @@ try {
   const multiple = renderToStaticMarkup(createElement(ProfileCardCarousel, { profile: personalData, slides: [...slides, { ...slides[0], id: 'second', label: 'Security' }] }));
   assert.ok(multiple.includes('Next topic'), 'Brak nawigacji między tematami');
   assert.ok(multiple.includes('aria-pressed="true"'), 'Aktywny temat musi być oznaczony');
-  assert.equal(featuredProjects.length, 1, 'Portfolio powinno pokazywać jeden projekt');
-  assert.equal(featuredProjects[0].id, 'primavera', 'Wybranym projektem powinna być PrimaVera');
+  assert.deepEqual(featuredProjects.map((p) => p.id).sort(), ['better-me', 'primavera'], 'Portfolio powinno pokazywać BetterMe i PrimaVera');
   console.log('OK: renderowanie karty, prawdziwe profile, opis zdjęcia, nawigacja i zakres projektów.');
 } finally {
   await server.close();

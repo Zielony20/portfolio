@@ -115,7 +115,7 @@ export default function PrintableCV({ onClose }) {
             {/* Featured Projects Section */}
             <div>
               <h2 className="text-xs font-bold uppercase tracking-wider text-slate-400 border-b border-slate-200 pb-1 mb-3">
-                Featured project: PrimaVera
+                Featured projects
               </h2>
 
               <div className="space-y-3">
@@ -124,7 +124,7 @@ export default function PrintableCV({ onClose }) {
                     <div className="font-bold text-xs text-slate-900">{proj.title}</div>
                     <div className="text-xs text-slate-600 mb-1">{proj.cvDescription || proj.description}</div>
                     <div className="text-xs font-mono text-teal-900">
-                      Stack: {proj.tags.slice(0, 6).join(", ")}
+                      Stack: {proj.tags.slice(0, 8).join(", ")}
                     </div>
                   </div>
                 ))}
