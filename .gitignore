@@ -16,6 +16,7 @@ dist-ssr
 docs/rekrutacja/
 # Local verification artifacts may contain superseded portfolio copy
 docs/evidence/
+.archify/
 
 # Editor directories and files
 .vscode/*

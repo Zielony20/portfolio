@@ -40,6 +40,7 @@ export const featuredProjects = [
         badge: 'Architecture Model',
         description: 'Interactive system topology showing multi-platform clients (Android Compose & Chrome MV3), Axum/Tokio async Rust ingestion, PostgreSQL/SQLite storage, and KinD Kubernetes deployment.',
         src: '/diagrams/betterme-architecture.html',
+        imageSrc: '/diagrams/betterme-architecture.png',
       },
     ],
     codeSections: [
@@ -106,6 +107,7 @@ export const featuredProjects = [
         badge: 'K8s Cluster Topology',
         description: 'Comprehensive cluster layout on host .61: Cloudflare Tunnel, Ingress controller, Go Gin backend, authentication service, DB management UI, multiplayer engine, PostgreSQL, Qdrant vector database, HashiCorp Vault, n8n automations, and Prometheus monitoring.',
         src: '/diagrams/primavera-architecture.html',
+        imageSrc: '/diagrams/primavera-architecture.png',
       },
       {
         id: 'primavera-sec-dataflow',
@@ -113,6 +115,7 @@ export const featuredProjects = [
         badge: 'Dataflow & Event Automation',
         description: 'Live incident triage topology: Postgres audit events and Prometheus alerts ingested via HMAC webhooks, evaluated in n8n, authorized against Vault, and dispatched to Telegram Ops bot and Brevo, with automated Cloudflare WAF IP blocks and GitOps rollbacks.',
         src: '/diagrams/primavera-security-dataflow.html',
+        imageSrc: '/diagrams/primavera-security-dataflow.png',
       },
     ],
     codeSections: [

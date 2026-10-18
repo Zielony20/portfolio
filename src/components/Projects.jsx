@@ -1,9 +1,19 @@
 import { useState } from 'react';
 import { featuredProjects } from '../data/portfolioData';
-import { ArrowUpRight, ExternalLink, Layers } from 'lucide-react';
+import { ArrowUpRight, ExternalLink, Layers, Image as ImageIcon, Sparkles } from 'lucide-react';
+
+function resolveAsset(path) {
+  if (!path) return '';
+  if (path.startsWith('http://') || path.startsWith('https://')) return path;
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${cleanBase}${cleanPath}`;
+}
 
 function ProjectDiagrams({ diagrams, projectId }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [viewMode, setViewMode] = useState('image'); // 'image' | 'interactive'
 
   if (!diagrams || diagrams.length === 0) return null;
   const current = diagrams[selectedIndex] || diagrams[0];
@@ -36,8 +46,30 @@ function ProjectDiagrams({ diagrams, projectId }) {
               ))}
             </div>
           )}
+
+          <div className="diagram-mode-toggle" role="group" aria-label="Diagram View Mode">
+            <button
+              type="button"
+              className={`diagram-mode-btn ${viewMode === 'image' ? 'active' : ''}`}
+              onClick={() => setViewMode('image')}
+              title="Tradycyjny widok graficzny"
+            >
+              <ImageIcon size={13} aria-hidden="true" />
+              <span>Graphic</span>
+            </button>
+            <button
+              type="button"
+              className={`diagram-mode-btn ${viewMode === 'interactive' ? 'active' : ''}`}
+              onClick={() => setViewMode('interactive')}
+              title="Interaktywny model z zoomem i badaniem zależności"
+            >
+              <Sparkles size={13} aria-hidden="true" />
+              <span>Interactive</span>
+            </button>
+          </div>
+
           <a
-            href={current.src}
+            href={resolveAsset(current.src)}
             target="_blank"
             rel="noopener noreferrer"
             className="diagram-open-btn"
@@ -50,15 +82,40 @@ function ProjectDiagrams({ diagrams, projectId }) {
       </div>
 
       <div className="diagram-frame-wrapper">
-        <iframe
-          src={current.src}
-          title={`${current.title} interactive architecture model`}
-          className="diagram-iframe"
-          loading="lazy"
-          sandbox="allow-scripts allow-same-origin allow-popups"
-        />
+        {viewMode === 'image' && current.imageSrc ? (
+          <div className="diagram-image-container">
+            <img
+              src={resolveAsset(current.imageSrc)}
+              alt={`${current.title} interactive architecture model`}
+              className="diagram-static-img"
+              loading="lazy"
+            />
+            <div className="diagram-image-overlay">
+              <button
+                type="button"
+                className="diagram-interactive-launch-btn"
+                onClick={() => setViewMode('interactive')}
+              >
+                <Sparkles size={13} aria-hidden="true" />
+                <span>Uruchom model interaktywny (Archify)</span>
+              </button>
+            </div>
+          </div>
+        ) : (
+          <iframe
+            src={resolveAsset(current.src)}
+            title={`${current.title} interactive architecture model`}
+            className="diagram-iframe"
+            loading="lazy"
+            sandbox="allow-scripts allow-same-origin allow-popups"
+          />
+        )}
         <div className="diagram-footer-hint">
-          <span>Interaktywny model architektury wygenerowany z Archify · Obsługa zoom i pan · Klikaj elementy, by badać zależności</span>
+          {viewMode === 'image' ? (
+            <span>Tradycyjny widok graficzny · Kliknij „Uruchom model interaktywny”, aby badać zależności i zoomować na żywo</span>
+          ) : (
+            <span>Interaktywny model architektury wygenerowany z Archify · Obsługa zoom i pan · Klikaj elementy, by badać zależności</span>
+          )}
           <span className="diagram-hint-tag">Archify v3.1</span>
         </div>
       </div>
