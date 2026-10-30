@@ -4,8 +4,8 @@ import { ProfileCardCarousel } from './ui/profile-card-testimonial-carousel';
 const slides = [
   {
     id: 'about',
-    label: 'About Me',
-    title: 'Backend, DevOps & Cloud-Native Security.',
+    label: 'About me',
+    title: 'Backend, DevOps & cloud-native security.',
     description: 'Since February 2023, I have worked on cybersecurity projects at Nokia. I combine backend engineering in Go, Rust and Java with Kubernetes, Helm, Terraform, and n8n automations. I focus on resilient microservices, container orchestration, least-privilege security, and robust telemetry.',
     href: '#experience',
     linkLabel: 'Explore my experience & skills',
@@ -34,7 +34,7 @@ export default function Hero() {
       <div className="page-width">
         <ProfileCardCarousel profile={personalData} slides={slides} />
         <div className="hero-footnote">
-          <span>Backend & Systems Engineer · Go / Rust</span>
+          <span>Backend & systems engineer · Go / Rust</span>
           <span>Poznań · Employment contract</span>
         </div>
       </div>

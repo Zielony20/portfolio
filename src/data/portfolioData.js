@@ -1,6 +1,6 @@
 export const personalData = {
   name: 'Piotr Sikora-Malach',
-  title: 'Backend & Systems Engineer (Go / Rust) | DevOps, Cloud & Automation',
+  title: 'Backend & systems engineer (Go / Rust) | DevOps, cloud & automation',
   location: 'Poznań, Poland',
   photo: 'profile-placeholder.svg',
   photoAlt: 'Profile photo placeholder to be replaced with a personal photograph',
@@ -8,19 +8,19 @@ export const personalData = {
   phone: '+48 697 358 952',
   linkedin: 'https://www.linkedin.com/in/piotr-sikora/',
   github: 'https://github.com/Zielony20',
-  bio: 'Since February 2023, I have worked as a Fullstack Software Engineer at Nokia on cybersecurity projects. I combine backend development in Go, Java, Rust and Python with cloud infrastructure and workflow automation. I am the creator of the bienvenidosprimavera.pl platform (with n8n business automations) and BetterMe, a personal focus and digital wellness platform powered by an asynchronous Rust backend, React dashboard, and local Laya AI classification.',
+  bio: 'Since February 2023, I have worked as a Fullstack software engineer at Nokia on cybersecurity projects. I combine backend development in Go, Java, Rust and Python with cloud infrastructure and workflow automation. I am the creator of the bienvenidosprimavera.pl platform (with n8n business automations) and BetterMe, a personal focus and digital wellness platform powered by an asynchronous Rust backend, React dashboard, and local Laya AI classification.',
   stats: [
     { label: 'PrimaVera users', value: '~40' },
-    { label: 'PrimaVera & Automation', value: 'Go / PostgreSQL / n8n' },
+    { label: 'PrimaVera & automation', value: 'Go / PostgreSQL / n8n' },
     { label: 'BetterMe platform', value: 'Rust / React / Laya AI' },
-    { label: 'Nokia experience', value: 'Cybersecurity & Cloud' },
+    { label: 'Nokia experience', value: 'Cybersecurity & cloud' },
   ],
 };
 
 export const featuredProjects = [
   {
     id: 'better-me',
-    title: 'BetterMe | Personal Focus & Digital Wellness Platform',
+    title: 'BetterMe | Personal focus & digital wellness platform',
     subtitle: 'A full-stack ecosystem with an async Rust backend, React dashboard, and local Laya AI classification',
     category: 'Backend · Rust · React · Local AI',
     description: 'I created BetterMe to help users regain deep focus and control over digital habits with total privacy. The platform blocks short-form video (Reels, Shorts) and distracting websites across browsers and mobile devices, organizes golden hours (deep-work sessions), and monitors daily activity rhythms. It is built with an asynchronous Rust backend (Axum/Tokio), a modern React web dashboard, and an on-premise Laya AI model (Ollama) for private content classification.',
@@ -36,7 +36,7 @@ export const featuredProjects = [
     diagrams: [
       {
         id: 'betterme-arch',
-        title: 'Platform Architecture & Kubernetes Topology',
+        title: 'Platform architecture & Kubernetes topology',
         description: 'Interactive system topology with multi-platform clients (Android Compose & Chrome MV3), Cilium CNI Ingress & mTLS, Axum/Tokio async Rust backend, PostgreSQL storage, Log Collector, and Tetragon eBPF security monitoring with CVE Scanner.',
         src: '/diagrams/betterme-architecture.html',
         imageSrc: '/diagrams/betterme-architecture.png',
@@ -81,7 +81,7 @@ export const featuredProjects = [
       },
     ],
     publicScopeNote: 'Full-stack platform created and actively maintained by Piotr Sikora-Malach.',
-    tags: ['Rust', 'Axum', 'Tokio', 'SQLx', 'PostgreSQL', 'Laya AI', 'Ollama', 'React', 'TypeScript', 'Tailwind CSS', 'Android', 'Kotlin', 'Jetpack Compose', 'WorkManager', 'Docker', 'Kubernetes', 'KinD', 'Chrome Extension', 'REST API'],
+    tags: ['Rust', 'Axum', 'Tokio', 'SQLx', 'PostgreSQL', 'Laya AI', 'Ollama', 'React', 'TypeScript', 'Tailwind CSS', 'Android', 'Kotlin', 'Jetpack Compose', 'WorkManager', 'Docker', 'Kubernetes', 'KinD', 'Chrome extension', 'REST API'],
   },
   {
     id: 'primavera',
@@ -102,17 +102,10 @@ export const featuredProjects = [
     diagrams: [
       {
         id: 'primavera-arch',
-        title: 'Production Kubernetes & Services Architecture',
+        title: 'Production Kubernetes & services architecture',
         description: 'Comprehensive cluster layout on host .61: Cloudflare Tunnel, Cilium CNI Ingress & mTLS, Go Gin backend, AI Speech Engine, Qdrant vector DB, Multiplayer Engine, PostgreSQL, Log Collector, and Tetragon eBPF security monitoring with CVE Scanner and Telegram alerting.',
         src: '/diagrams/primavera-architecture.html',
         imageSrc: '/diagrams/primavera-architecture.png',
-      },
-      {
-        id: 'primavera-sec-dataflow',
-        title: 'Security Telemetry & n8n Alerting Pipeline',
-        description: 'Live incident triage topology: Postgres audit events and Prometheus alerts ingested via HMAC webhooks, evaluated in n8n, authorized against Vault, and dispatched to Telegram Ops bot and Brevo, with automated Cloudflare WAF IP blocks and GitOps rollbacks.',
-        src: '/diagrams/primavera-security-dataflow.html',
-        imageSrc: '/diagrams/primavera-security-dataflow.png',
       },
     ],
     codeSections: [
@@ -173,21 +166,21 @@ export const featuredProjects = [
       },
     ],
     publicScopeNote: 'Platform authorship and approximately 40 users confirmed on 14/10/2026. The architecture overview is based on the project code and configuration.',
-    tags: ['Go', 'Gin', 'GORM', 'PostgreSQL', 'n8n', 'Workflow Automation', 'Qdrant', 'MinIO / S3', 'REST API', 'React', 'Bootstrap', 'Sass', 'JWT', 'TOTP', 'bcrypt', 'Docker', 'Kubernetes', 'KinD', 'Helm', 'Terraform', 'HashiCorp Vault', 'Cilium', 'NetworkPolicy', 'Cloudflare Tunnel', 'Argo CD', 'Google Drive API', 'Brevo', 'Telegram API', 'LLM APIs', 'Text-to-Speech (TTS)', 'SQLite (tests)', 'Vitest', 'Playwright'],
+    tags: ['Go', 'Gin', 'GORM', 'PostgreSQL', 'n8n', 'Workflow automation', 'Qdrant', 'MinIO / S3', 'REST API', 'React', 'Bootstrap', 'Sass', 'JWT', 'TOTP', 'bcrypt', 'Docker', 'Kubernetes', 'KinD', 'Helm', 'Terraform', 'HashiCorp Vault', 'Cilium', 'NetworkPolicy', 'Cloudflare Tunnel', 'Argo CD', 'Google Drive API', 'Brevo', 'Telegram API', 'LLM APIs', 'Text-to-speech (TTS)', 'SQLite (tests)', 'Vitest', 'Playwright'],
   },
 ];
 
 export const skillsCategories = [
   {
-    title: 'Backend & Distributed Systems',
-    skills: ['Golang', 'Java 17+', 'Rust (Axum, Tokio, SQLx)', 'Python', 'Lua', 'Gin', 'Spring Boot', 'FastAPI', 'REST API', 'GORM', 'Distributed Systems', 'Business domain modeling', 'Data access abstraction'],
+    title: 'Backend & distributed systems',
+    skills: ['Golang', 'Java 17+', 'Rust (Axum, Tokio, SQLx)', 'Python', 'Lua', 'Gin', 'Spring Boot', 'FastAPI', 'REST API', 'GORM', 'Distributed systems', 'Business domain modeling', 'Data access abstraction'],
   },
   {
-    title: 'Workflow Automation & AI Tooling',
-    skills: ['n8n (Workflow Automation)', 'Event-Driven Architectures', 'Webhook Integrations', 'Telegram Bot API', 'Antigravity SDK', 'Claude Code', 'Cursor', 'Ollama', 'Qdrant (Vector DB)'],
+    title: 'Workflow automation & AI tooling',
+    skills: ['n8n (workflow automation)', 'Event-driven architectures', 'Webhook integrations', 'Telegram bot API', 'Antigravity SDK', 'Claude Code', 'Cursor', 'Ollama', 'Qdrant (Vector DB)'],
   },
   {
-    title: 'DevOps & Infrastructure',
+    title: 'DevOps & infrastructure',
     skills: ['Docker', 'Kubernetes (AKS, OpenShift, KinD)', 'Helm', 'Terraform / IaC', 'KinD', 'Cloudflare Tunnel', 'Deployment automation', 'Ansible', 'kpt'],
   },
   {
@@ -195,9 +188,9 @@ export const skillsCategories = [
     skills: ['eBPF', 'Cilium', 'NetworkPolicy', 'HashiCorp Vault', 'JWT', 'OAuth 2.0', '2FA'],
   },
   {
-    title: 'Testing & Code Quality',
+    title: 'Testing & code quality',
     description: 'Testing complete workflows, debugging failures and reviewing changes for production-ready configuration.',
-    skills: ['Unit Testing', 'Integration Testing', 'End-to-End Testing', 'Go testing', 'Playwright', 'Vitest', 'PyTest', 'Robot Framework', 'Code Review', 'Debugging'],
+    skills: ['Unit testing', 'Integration testing', 'End-to-end testing', 'Go testing', 'Playwright', 'Vitest', 'PyTest', 'Robot Framework', 'Code review', 'Debugging'],
   },
   {
     title: 'Databases',
@@ -205,7 +198,7 @@ export const skillsCategories = [
   },
   {
     title: 'Integrations',
-    skills: ['n8n', 'API integrations', 'Google Drive API', 'Brevo', 'Telegram API', 'LLM APIs', 'Text-to-Speech (TTS)'],
+    skills: ['n8n', 'API integrations', 'Google Drive API', 'Brevo', 'Telegram API', 'LLM APIs', 'Text-to-speech (TTS)'],
   },
   {
     title: 'Observability',
@@ -215,7 +208,7 @@ export const skillsCategories = [
 
 export const experienceTimeline = [
   {
-    role: 'Fullstack Software Engineer',
+    role: 'Fullstack software engineer',
     company: 'Nokia Solutions And Networks Sp. z o.o.',
     period: '02/2023 - present',
     location: 'Poznań',
@@ -229,7 +222,7 @@ export const experienceTimeline = [
     ],
   },
   {
-    role: 'Junior Software Tester',
+    role: 'Junior software tester',
     company: 'Solwit S.A.',
     period: '07/2021 - 02/2022',
     location: 'Poznań',
@@ -241,7 +234,7 @@ export const experienceTimeline = [
     ],
   },
   {
-    role: 'Linux Administrator Intern',
+    role: 'Linux administrator intern',
     company: 'Vobacom',
     period: '08/2017',
     location: 'Toruń',
@@ -251,21 +244,21 @@ export const experienceTimeline = [
 
 export const educationHistory = [
   {
-    degree: 'MSc Eng in Computer Science',
+    degree: 'MSc Eng in computer science',
     school: 'Poznań University of Technology',
     period: '2022 - 2023',
-    specialty: 'Distributed Systems',
+    specialty: 'Distributed systems',
     thesis: 'Concurrent programming in Rust and Go: a comparative analysis.',
   },
   {
-    degree: 'BEng in Information and Communication Technology',
+    degree: 'BEng in information and communication technology',
     school: 'Poznań University of Technology',
     period: '2018 - 2022',
-    specialty: 'Information and Communication Technology (ICT)',
+    specialty: 'Information and communication technology (ICT)',
     thesis: 'A general-purpose tool for modifying and visualizing dataset characteristics to improve machine-learning algorithm performance.',
   },
   {
-    degree: 'IT Technician',
+    degree: 'IT technician',
     school: 'Technical Secondary School, Toruń (ZSMEiE)',
     period: '2014 - 2018',
     specialty: 'Vocational qualification in information technology',

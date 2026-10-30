@@ -27,7 +27,7 @@ function ProjectDiagrams({ diagrams, projectId }) {
         </div>
         <div className="diagram-header-actions">
           {diagrams.length > 1 && (
-            <div className="diagram-tabs" role="tablist" aria-label="Available Architecture Diagrams">
+            <div className="diagram-tabs" role="tablist" aria-label="Available architecture diagrams">
               {diagrams.map((d, idx) => (
                 <button
                   key={d.id}
@@ -37,13 +37,13 @@ function ProjectDiagrams({ diagrams, projectId }) {
                   className={`diagram-tab-btn ${idx === selectedIndex ? 'active' : ''}`}
                   onClick={() => setSelectedIndex(idx)}
                 >
-                  {idx === 0 ? 'System Architecture' : 'Security & n8n Dataflow'}
+                  {idx === 0 ? 'System architecture' : 'Security & n8n dataflow'}
                 </button>
               ))}
             </div>
           )}
 
-          <div className="diagram-mode-toggle" role="group" aria-label="Diagram View Mode">
+          <div className="diagram-mode-toggle" role="group" aria-label="Diagram view mode">
             <button
               type="button"
               className={`diagram-mode-btn ${viewMode === 'image' ? 'active' : ''}`}
@@ -67,7 +67,7 @@ function ProjectDiagrams({ diagrams, projectId }) {
             className="diagram-open-btn"
             title="Open diagram in full window"
           >
-            <span>Full Diagram</span>
+            <span>Full diagram</span>
             <ExternalLink size={14} aria-hidden="true" />
           </a>
         </div>
@@ -117,7 +117,7 @@ export default function Projects() {
       <div className="page-width">
         <div className="section-heading">
           <p className="eyebrow">01 / Featured platforms</p>
-          <h2>Production Platforms.<br />From architecture to operating software.</h2>
+          <h2>Production platforms.<br />From architecture to operating software.</h2>
         </div>
 
         {featuredProjects.map(project => (
