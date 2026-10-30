@@ -19,71 +19,6 @@ export const personalData = {
 
 export const featuredProjects = [
   {
-    id: 'better-me',
-    title: 'BetterMe | Personal focus & digital wellness platform',
-    subtitle: 'A full-stack ecosystem with an async Rust backend, React dashboard, and local Laya AI classification',
-    category: 'Backend · Rust · React · Local AI',
-    description: 'I created BetterMe to help users regain deep focus and control over digital habits with total privacy. The platform blocks short-form video (Reels, Shorts) and distracting websites across browsers and mobile devices, organizes golden hours (deep-work sessions), and monitors daily activity rhythms. It is built with an asynchronous Rust backend (Axum/Tokio), a modern React web dashboard, and an on-premise Laya AI model (Ollama) for private content classification.',
-    status: 'My own active platform',
-    link: 'https://bienvenidosprimavera.online',
-    linkLabel: 'Visit bienvenidosprimavera.online',
-    cvDescription: 'Designed and implemented the complete BetterMe ecosystem: high-performance asynchronous Rust backend (Axum, Tokio, SQLx, PostgreSQL), local Laya AI decision model (Ollama) for on-premise content classification, React/TypeScript dashboard, native Android companion application, Chrome extension, and automated KinD/Kubernetes safe deployment.',
-    highlights: [
-      'High-throughput asynchronous Rust backend with Axum, Tokio, and SQLx handling continuous activity streams.',
-      'On-premise AI topic classification using the local Laya model (Ollama) ensuring zero data leakage to external clouds.',
-      'Modern React web dashboard combined with native Android (Compose) and Chrome MV3 companion clients.',
-    ],
-    diagrams: [
-      {
-        id: 'betterme-arch',
-        title: 'Platform architecture & Kubernetes topology',
-        description: 'Interactive system topology with multi-platform clients (Android Compose & Chrome MV3), Cilium CNI Ingress & mTLS, Axum/Tokio async Rust backend, PostgreSQL storage, Log Collector, and Tetragon eBPF security monitoring with CVE Scanner.',
-        src: '/diagrams/betterme-architecture.html',
-        imageSrc: '/diagrams/betterme-architecture.png',
-      },
-    ],
-    codeSections: [
-      {
-        title: 'Asynchronous Rust backend',
-        description: 'The backend is built in Rust using Axum and Tokio, optimized for minimal latency, low memory footprint, and reliable asynchronous stream processing.',
-        details: [
-          'RESTful API for telemetry, activity sessions, sleep intervals, and productivity metrics.',
-          'SQLx integration supporting PostgreSQL in production and SQLite for local embedded use.',
-          'Structured logging with tracing, strongly typed configuration, and comprehensive error handling.',
-        ],
-      },
-      {
-        title: 'Mobile & browser clients',
-        description: 'Companion applications collect device indicators and provide immediate user feedback without degrading battery life.',
-        details: [
-          'Native Android application written in Kotlin with Jetpack Compose UI.',
-          'WorkManager background tasks managing queue-based synchronization during network transitions.',
-          'Chrome Manifest V3 extension tracking web focus and digital wellness sessions.',
-        ],
-      },
-      {
-        title: 'Frontend dashboard',
-        description: 'Interactive analytics dashboard visualizing trends, sleep consistency scores, and activity habits.',
-        details: [
-          'Modern SPA built with React, TypeScript, Vite, and Tailwind CSS.',
-          'Responsive data charts, daily summary views, and device connection management.',
-          'Local-first privacy architecture ensuring all analytics remain under user control.',
-        ],
-      },
-      {
-        title: 'Infrastructure and operations',
-        description: 'Containerized deployment managed via KinD, Docker Compose, and automated verification scripts.',
-        details: [
-          'Kubernetes manifests and KinD cluster automation with persistent volumes.',
-          'Automated deployment scripts (safe-deploy.sh) with pre-deployment database backups.',
-          'Isolated secrets management and health-check probes for high availability.',
-        ],
-      },
-    ],
-    publicScopeNote: 'Full-stack platform created and actively maintained by Piotr Sikora-Malach.',
-    tags: ['Rust', 'Axum', 'Tokio', 'SQLx', 'PostgreSQL', 'Laya AI', 'Ollama', 'React', 'TypeScript', 'Tailwind CSS', 'Android', 'Kotlin', 'Jetpack Compose', 'WorkManager', 'Docker', 'Kubernetes', 'KinD', 'Chrome extension', 'REST API'],
-  },
-  {
     id: 'primavera',
     title: 'PrimaVera | bienvenidosprimavera.pl',
     subtitle: 'A language-school platform: backend, n8n automations, integrations and infrastructure',
@@ -167,6 +102,71 @@ export const featuredProjects = [
     ],
     publicScopeNote: 'Platform authorship and approximately 40 users confirmed on 14/10/2026. The architecture overview is based on the project code and configuration.',
     tags: ['Go', 'Gin', 'GORM', 'PostgreSQL', 'n8n', 'Workflow automation', 'Qdrant', 'MinIO / S3', 'REST API', 'React', 'Bootstrap', 'Sass', 'JWT', 'TOTP', 'bcrypt', 'Docker', 'Kubernetes', 'KinD', 'Helm', 'Terraform', 'HashiCorp Vault', 'Cilium', 'NetworkPolicy', 'Cloudflare Tunnel', 'Argo CD', 'Google Drive API', 'Brevo', 'Telegram API', 'LLM APIs', 'Text-to-speech (TTS)', 'SQLite (tests)', 'Playwright'],
+  },
+  {
+    id: 'better-me',
+    title: 'BetterMe | Personal focus & digital wellness platform',
+    subtitle: 'A full-stack ecosystem with an async Rust backend, React dashboard, and local Laya AI classification',
+    category: 'Backend · Rust · React · Local AI',
+    description: 'I created BetterMe to help users regain deep focus and control over digital habits with total privacy. The platform blocks short-form video (Reels, Shorts) and distracting websites across browsers and mobile devices, organizes golden hours (deep-work sessions), and monitors daily activity rhythms. It is built with an asynchronous Rust backend (Axum/Tokio), a modern React web dashboard, and an on-premise Laya AI model (Ollama) for private content classification.',
+    status: 'My own active platform',
+    link: 'https://bienvenidosprimavera.online',
+    linkLabel: 'Visit bienvenidosprimavera.online',
+    cvDescription: 'Designed and implemented the complete BetterMe ecosystem: high-performance asynchronous Rust backend (Axum, Tokio, SQLx, PostgreSQL), local Laya AI decision model (Ollama) for on-premise content classification, React/TypeScript dashboard, native Android companion application, Chrome extension, and automated KinD/Kubernetes safe deployment.',
+    highlights: [
+      'High-throughput asynchronous Rust backend with Axum, Tokio, and SQLx handling continuous activity streams.',
+      'On-premise AI topic classification using the local Laya model (Ollama) ensuring zero data leakage to external clouds.',
+      'Modern React web dashboard combined with native Android (Compose) and Chrome MV3 companion clients.',
+    ],
+    diagrams: [
+      {
+        id: 'betterme-arch',
+        title: 'Platform architecture & Kubernetes topology',
+        description: 'Interactive system topology with multi-platform clients (Android Compose & Chrome MV3), Cilium CNI Ingress & mTLS, Axum/Tokio async Rust backend, PostgreSQL storage, Log Collector, and Tetragon eBPF security monitoring with CVE Scanner.',
+        src: '/diagrams/betterme-architecture.html',
+        imageSrc: '/diagrams/betterme-architecture.png',
+      },
+    ],
+    codeSections: [
+      {
+        title: 'Asynchronous Rust backend',
+        description: 'The backend is built in Rust using Axum and Tokio, optimized for minimal latency, low memory footprint, and reliable asynchronous stream processing.',
+        details: [
+          'RESTful API for telemetry, activity sessions, sleep intervals, and productivity metrics.',
+          'SQLx integration supporting PostgreSQL in production and SQLite for local embedded use.',
+          'Structured logging with tracing, strongly typed configuration, and comprehensive error handling.',
+        ],
+      },
+      {
+        title: 'Mobile & browser clients',
+        description: 'Companion applications collect device indicators and provide immediate user feedback without degrading battery life.',
+        details: [
+          'Native Android application written in Kotlin with Jetpack Compose UI.',
+          'WorkManager background tasks managing queue-based synchronization during network transitions.',
+          'Chrome Manifest V3 extension tracking web focus and digital wellness sessions.',
+        ],
+      },
+      {
+        title: 'Frontend dashboard',
+        description: 'Interactive analytics dashboard visualizing trends, sleep consistency scores, and activity habits.',
+        details: [
+          'Modern SPA built with React, TypeScript, Vite, and Tailwind CSS.',
+          'Responsive data charts, daily summary views, and device connection management.',
+          'Local-first privacy architecture ensuring all analytics remain under user control.',
+        ],
+      },
+      {
+        title: 'Infrastructure and operations',
+        description: 'Containerized deployment managed via KinD, Docker Compose, and automated verification scripts.',
+        details: [
+          'Kubernetes manifests and KinD cluster automation with persistent volumes.',
+          'Automated deployment scripts (safe-deploy.sh) with pre-deployment database backups.',
+          'Isolated secrets management and health-check probes for high availability.',
+        ],
+      },
+    ],
+    publicScopeNote: 'Full-stack platform created and actively maintained by Piotr Sikora-Malach.',
+    tags: ['Rust', 'Axum', 'Tokio', 'SQLx', 'PostgreSQL', 'Laya AI', 'Ollama', 'React', 'TypeScript', 'Tailwind CSS', 'Android', 'Kotlin', 'Jetpack Compose', 'WorkManager', 'Docker', 'Kubernetes', 'KinD', 'Chrome extension', 'REST API'],
   },
 ];
 
