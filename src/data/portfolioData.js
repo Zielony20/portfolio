@@ -212,7 +212,7 @@ export const experienceTimeline = [
     company: 'Nokia Solutions And Networks Sp. z o.o.',
     period: '02/2023 - present',
     location: 'Poznań',
-    description: 'Software development across cybersecurity projects. English-speaking working environment, with English at B2 level.',
+    description: 'Software development across cybersecurity projects in an English-speaking working environment.',
     bulletPoints: [
       'Developed and maintained software solutions across cybersecurity and cloud projects.',
       'Designed and implemented microservices, fixed bugs, prepared tests and technical documentation, and participated in code reviews.',
