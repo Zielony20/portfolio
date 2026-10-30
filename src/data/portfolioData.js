@@ -151,7 +151,7 @@ export const featuredProjects = [
         description: 'Tests cover backend logic, HTTP workflows and PrimaPanel controller contracts. Browser scenarios are maintained separately.',
         details: [
           'Go unit and integration tests, with isolated SQLite databases for selected workflows.',
-          'Vitest for PrimaPanel and Playwright for browser scenarios.',
+          'Playwright for browser scenarios, and automated test coverage across panel and API workflows.',
           'Authorization and data-flow checks, including calendar, timesheet, approval and CSV-export workflows.',
         ],
       },
@@ -166,18 +166,18 @@ export const featuredProjects = [
       },
     ],
     publicScopeNote: 'Platform authorship and approximately 40 users confirmed on 14/10/2026. The architecture overview is based on the project code and configuration.',
-    tags: ['Go', 'Gin', 'GORM', 'PostgreSQL', 'n8n', 'Workflow automation', 'Qdrant', 'MinIO / S3', 'REST API', 'React', 'Bootstrap', 'Sass', 'JWT', 'TOTP', 'bcrypt', 'Docker', 'Kubernetes', 'KinD', 'Helm', 'Terraform', 'HashiCorp Vault', 'Cilium', 'NetworkPolicy', 'Cloudflare Tunnel', 'Argo CD', 'Google Drive API', 'Brevo', 'Telegram API', 'LLM APIs', 'Text-to-speech (TTS)', 'SQLite (tests)', 'Vitest', 'Playwright'],
+    tags: ['Go', 'Gin', 'GORM', 'PostgreSQL', 'n8n', 'Workflow automation', 'Qdrant', 'MinIO / S3', 'REST API', 'React', 'Bootstrap', 'Sass', 'JWT', 'TOTP', 'bcrypt', 'Docker', 'Kubernetes', 'KinD', 'Helm', 'Terraform', 'HashiCorp Vault', 'Cilium', 'NetworkPolicy', 'Cloudflare Tunnel', 'Argo CD', 'Google Drive API', 'Brevo', 'Telegram API', 'LLM APIs', 'Text-to-speech (TTS)', 'SQLite (tests)', 'Playwright'],
   },
 ];
 
 export const skillsCategories = [
   {
     title: 'Backend & distributed systems',
-    skills: ['Golang', 'Java 17+', 'Rust (Axum, Tokio, SQLx)', 'Python', 'Lua', 'Gin', 'Spring Boot', 'FastAPI', 'REST API', 'GORM', 'Distributed systems', 'Business domain modeling', 'Data access abstraction'],
+    skills: ['Golang', 'Java 17+', 'Rust (Axum, Tokio, SQLx)', 'Python', 'Lua', 'Gin', 'Spring Boot', 'FastAPI', 'REST API', 'GORM', 'Distributed systems', 'Data access abstraction'],
   },
   {
     title: 'Workflow automation & AI tooling',
-    skills: ['n8n (workflow automation)', 'Event-driven architectures', 'Webhook integrations', 'Telegram bot API', 'Antigravity SDK', 'Claude Code', 'Cursor', 'Ollama', 'Qdrant (Vector DB)'],
+    skills: ['n8n (workflow automation)', 'Event-driven architectures', 'Antigravity SDK', 'Claude Code', 'Cursor', 'Ollama', 'Qdrant'],
   },
   {
     title: 'DevOps & infrastructure',
@@ -190,7 +190,7 @@ export const skillsCategories = [
   {
     title: 'Testing & code quality',
     description: 'Testing complete workflows, debugging failures and reviewing changes for production-ready configuration.',
-    skills: ['Unit testing', 'Integration testing', 'End-to-end testing', 'Go testing', 'Playwright', 'Vitest', 'PyTest', 'Robot Framework', 'Code review', 'Debugging'],
+    skills: ['Unit testing', 'Integration testing', 'End-to-end testing', 'Go testing', 'Playwright', 'PyTest', 'Robot Framework', 'Code review'],
   },
   {
     title: 'Databases',
