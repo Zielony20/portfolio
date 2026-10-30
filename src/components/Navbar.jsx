@@ -3,8 +3,10 @@ import { ArrowUpRight, Menu, X } from 'lucide-react';
 import { personalData } from '../data/portfolioData';
 
 const navLinks = [
-  { label: 'About', href: '#about' }, { label: 'Projects', href: '#projects' },
-  { label: 'Skills', href: '#skills' }, { label: 'Experience', href: '#experience' },
+  { label: 'About', href: '#about' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Skills', href: '#skills' },
 ];
 
 export default function Navbar({ onOpenPrintableCV }) {

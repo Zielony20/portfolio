@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <section id="experience" className="content-section experience-section no-print">
       <div className="page-width">
-        <div className="section-heading"><p className="eyebrow">03 / Experience</p><h2>The experience behind the code.</h2></div>
+        <div className="section-heading"><p className="eyebrow">02 / Experience</p><h2>The experience behind the code.</h2></div>
         <div className="experience-layout">
           <div className="career-list">
             {experienceTimeline.map(item => (

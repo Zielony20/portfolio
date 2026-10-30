@@ -20,8 +20,8 @@ export default function App() {
       <main id="main-content">
         <Hero />
         <Projects />
-        <Skills />
         <Experience />
+        <Skills />
         <Contact />
       </main>
 
