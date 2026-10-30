@@ -214,9 +214,9 @@ export const experienceTimeline = [
     location: 'Poznań',
     description: 'Software development across cybersecurity projects. English-speaking working environment, with English at B2 level.',
     bulletPoints: [
-      'Adapted an agent installation process to a customer requirement for non-root execution by identifying commands requiring sudo and limiting elevated privileges.',
+      'Developed and maintained software solutions across cybersecurity and cloud projects.',
       'Designed and implemented microservices, fixed bugs, prepared tests and technical documentation, and participated in code reviews.',
-      'Proposed architectural solutions and adapted installation workflows to evolving deployment mechanisms.',
+      'Proposed architectural solutions and adapted deployment workflows to evolving infrastructure mechanisms.',
       'Worked with Java, Go, Python, Lua, Ansible, Kubernetes, Helm, Terraform and kpt.',
       'Collaborated and communicated technical information in English.',
     ],
