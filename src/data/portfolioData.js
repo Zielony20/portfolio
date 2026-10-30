@@ -8,6 +8,7 @@ export const personalData = {
   phone: '+48 697 358 952',
   linkedin: 'https://www.linkedin.com/in/piotr-sikora/',
   github: 'https://github.com/Zielony20',
+  portfolioUrl: 'https://zielony20.github.io/portfolio',
   bio: 'Since February 2023, I have worked as a Fullstack software engineer at Nokia on cybersecurity projects, developing microservices and cloud infrastructure tooling in Go, Java and Python. In parallel, I am the creator of the bienvenidosprimavera.pl platform (with event-driven n8n workflow automations) and BetterMe, a personal focus and digital wellness platform powered by an asynchronous Rust backend, React dashboard, and local Laya AI classification.',
   stats: [
     { label: 'PrimaVera users', value: '~40' },
@@ -77,7 +78,7 @@ export const featuredProjects = [
         description: 'The repository contains container definitions, Helm charts, a KinD environment and Terraform-managed infrastructure configuration.',
         details: [
           'Docker, Kubernetes and Helm with separate deployments, services, configuration and CronJobs.',
-          'Cloudflare Tunnel and service-access configuration, plus Argo CD manifests for Git-based configuration synchronization.',
+          'Cloudflare Tunnel, Ingress Nginx and service-access configuration, with direct Helm and manifest management.',
           'The safe-deploy script builds applications, creates pre-deployment backups, checks rollouts and health endpoints, and handles failures.',
         ],
       },
@@ -101,7 +102,7 @@ export const featuredProjects = [
       },
     ],
     publicScopeNote: 'Platform authorship and approximately 40 users confirmed on 14/10/2026. The architecture overview is based on the project code and configuration.',
-    tags: ['Go', 'Gin', 'GORM', 'PostgreSQL', 'n8n', 'Workflow automation', 'Qdrant', 'MinIO / S3', 'REST API', 'React', 'Bootstrap', 'Sass', 'JWT', 'TOTP', 'bcrypt', 'Docker', 'Kubernetes', 'KinD', 'Helm', 'Terraform', 'HashiCorp Vault', 'Cilium', 'NetworkPolicy', 'Cloudflare Tunnel', 'Argo CD', 'Google Drive API', 'Brevo', 'Telegram API', 'LLM APIs', 'Text-to-speech (TTS)', 'SQLite (tests)', 'Playwright'],
+    tags: ['Go', 'Gin', 'GORM', 'PostgreSQL', 'n8n', 'Workflow automation', 'Qdrant', 'MinIO / S3', 'REST API', 'React', 'Bootstrap', 'Sass', 'JWT', 'TOTP', 'bcrypt', 'Docker', 'Kubernetes', 'KinD', 'Helm', 'Terraform', 'HashiCorp Vault', 'Cilium', 'NetworkPolicy', 'Cloudflare Tunnel', 'Google Drive API', 'Brevo', 'Telegram API', 'LLM APIs', 'Text-to-speech (TTS)', 'SQLite (tests)', 'Playwright'],
   },
   {
     id: 'better-me',

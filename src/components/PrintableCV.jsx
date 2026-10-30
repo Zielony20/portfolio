@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { personalData, featuredProjects, skillsCategories, experienceTimeline, educationHistory } from '../data/portfolioData';
-import { Printer, X, Mail, Phone, MapPin, Globe } from 'lucide-react';
+import { Printer, X, Mail, Phone, MapPin, Globe, ExternalLink } from 'lucide-react';
 
 export default function PrintableCV({ onClose }) {
   const dialogRef = useRef(null);
@@ -69,10 +69,40 @@ export default function PrintableCV({ onClose }) {
                 <Globe className="w-3.5 h-3.5 text-slate-400" />
                 <span>{personalData.github}</span>
               </div>
+              <div className="flex items-center gap-2">
+                <ExternalLink className="w-3.5 h-3.5 text-teal-700" />
+                <a
+                  href={personalData.portfolioUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-teal-900 font-semibold underline underline-offset-2 hover:text-teal-700"
+                >
+                  zielony20.github.io/portfolio
+                </a>
+              </div>
             </div>
           </div>
 
-          <p className="text-xs text-slate-600 mt-4 leading-relaxed border-t border-slate-100 pt-3">
+          {/* Interactive portfolio callout banner */}
+          <div className="mt-4 p-3 bg-teal-50/70 border border-teal-200/80 rounded-lg flex items-center justify-between gap-3">
+            <div className="text-xs text-teal-950">
+              <span className="font-semibold text-teal-900">Interactive live portfolio & architecture diagrams:</span>
+              <span className="text-slate-600 block sm:inline sm:ml-1.5">
+                Explore comprehensive architecture overviews, live services, and source code at:
+              </span>
+            </div>
+            <a
+              href={personalData.portfolioUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-semibold text-teal-900 bg-white px-2.5 py-1 rounded border border-teal-300 shadow-xs hover:bg-teal-50 transition-colors whitespace-nowrap inline-flex items-center gap-1.5"
+            >
+              <span>Open portfolio</span>
+              <ExternalLink className="w-3 h-3 text-teal-700" />
+            </a>
+          </div>
+
+          <p className="text-xs text-slate-600 mt-3 leading-relaxed border-t border-slate-100 pt-3">
             {personalData.bio}
           </p>
         </div>
