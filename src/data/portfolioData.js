@@ -1,6 +1,6 @@
 export const personalData = {
   name: 'Piotr Sikora-Malach',
-  title: 'Backend & systems engineer (Go / Rust) | DevOps, cloud & automation',
+  title: 'Backend & systems engineer (Go / Java) | DevOps, cloud & automation',
   location: 'Poznań, Poland',
   photo: 'profile-placeholder.svg',
   photoAlt: 'Profile photo placeholder to be replaced with a personal photograph',
