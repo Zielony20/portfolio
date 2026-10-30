@@ -181,7 +181,7 @@ export const skillsCategories = [
   },
   {
     title: 'DevOps & infrastructure',
-    skills: ['Docker', 'Kubernetes (AKS, OpenShift, KinD)', 'Helm', 'Terraform / IaC', 'KinD', 'Cloudflare Tunnel', 'Deployment automation', 'Ansible', 'kpt'],
+    skills: ['Docker', 'Kubernetes (AKS, OpenShift, KinD)', 'Helm', 'Terraform / IaC', 'Cloudflare Tunnel', 'Deployment automation', 'Ansible', 'kpt'],
   },
   {
     title: 'Cybersecurity',
@@ -198,7 +198,7 @@ export const skillsCategories = [
   },
   {
     title: 'Integrations',
-    skills: ['n8n', 'API integrations', 'Google Drive API', 'Brevo', 'Telegram API', 'LLM APIs', 'Text-to-speech (TTS)'],
+    skills: ['n8n', 'API integrations', 'Cloudflare Workers', 'Google Drive API', 'Brevo', 'Telegram API', 'LLM APIs', 'Text-to-speech (TTS)'],
   },
   {
     title: 'Observability',
