@@ -8,7 +8,7 @@ export const personalData = {
   phone: '+48 697 358 952',
   linkedin: 'https://www.linkedin.com/in/piotr-sikora/',
   github: 'https://github.com/Zielony20',
-  bio: 'Since February 2023, I have worked as a Fullstack software engineer at Nokia on cybersecurity projects. I combine backend development in Go, Java and Python with cloud infrastructure and workflow automation. I am the creator of the bienvenidosprimavera.pl platform (with n8n business automations) and BetterMe, a personal focus and digital wellness platform powered by an asynchronous Rust backend, React dashboard, and local Laya AI classification.',
+  bio: 'Since February 2023, I have worked as a Fullstack software engineer at Nokia on cybersecurity projects, developing microservices and cloud infrastructure tooling in Go, Java and Python. In parallel, I am the creator of the bienvenidosprimavera.pl platform (with event-driven n8n workflow automations) and BetterMe, a personal focus and digital wellness platform powered by an asynchronous Rust backend, React dashboard, and local Laya AI classification.',
   stats: [
     { label: 'PrimaVera users', value: '~40' },
     { label: 'PrimaVera & automation', value: 'Go / PostgreSQL / n8n' },
