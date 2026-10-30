@@ -211,7 +211,6 @@ export const experienceTimeline = [
     role: 'Fullstack software engineer',
     company: 'Nokia Solutions And Networks Sp. z o.o.',
     period: '02/2023 - present',
-    location: 'Poznań',
     description: 'Software development across cybersecurity projects in an English-speaking working environment.',
     bulletPoints: [
       'Developed and maintained software solutions across cybersecurity and cloud projects.',
@@ -225,7 +224,6 @@ export const experienceTimeline = [
     role: 'Junior software tester',
     company: 'Solwit S.A.',
     period: '07/2021 - 02/2022',
-    location: 'Poznań',
     description: 'Firmware testing for network interface cards in server-lab environments.',
     bulletPoints: [
       'Configured network test environments and server racks.',
@@ -237,7 +235,6 @@ export const experienceTimeline = [
     role: 'Linux administrator intern',
     company: 'Vobacom',
     period: '08/2017',
-    location: 'Toruń',
     description: 'Linux server administration and website development with Drupal CMS.',
   },
 ];

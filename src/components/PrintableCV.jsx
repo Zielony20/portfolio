@@ -95,7 +95,7 @@ export default function PrintableCV({ onClose }) {
                       <span className="text-xs font-mono text-slate-500">{exp.period}</span>
                     </div>
                     <div className="text-xs font-semibold text-teal-900 mb-1">
-                      {exp.company} | {exp.location}
+                      {exp.company}{exp.location ? ` | ${exp.location}` : ''}
                     </div>
                     <p className="text-xs text-slate-600 mb-1 leading-snug">
                       {exp.description}

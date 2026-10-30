@@ -8,7 +8,7 @@ export default function Experience() {
         <div className="experience-layout">
           <div className="career-list">
             {experienceTimeline.map(item => (
-              <article key={item.company} className="career-entry"><p className="career-period">{item.period}</p><h3>{item.role}</h3><p className="career-company">{item.company} · {item.location}</p><p>{item.description}</p>
+              <article key={item.company} className="career-entry"><p className="career-period">{item.period}</p><h3>{item.role}</h3><p className="career-company">{item.company}{item.location ? ` · ${item.location}` : ''}</p><p>{item.description}</p>
                 {item.bulletPoints && <ul>{item.bulletPoints.map(point => <li key={point}>{point}</li>)}</ul>}
               </article>
             ))}
