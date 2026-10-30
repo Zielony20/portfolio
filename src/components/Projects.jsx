@@ -13,7 +13,7 @@ function resolveAsset(path) {
 
 function ProjectDiagrams({ diagrams, projectId }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [viewMode, setViewMode] = useState('image'); // 'image' | 'interactive'
+  const [viewMode, setViewMode] = useState('interactive'); // 'image' | 'interactive'
 
   if (!diagrams || diagrams.length === 0) return null;
   const current = diagrams[selectedIndex] || diagrams[0];

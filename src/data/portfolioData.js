@@ -36,8 +36,8 @@ export const featuredProjects = [
     diagrams: [
       {
         id: 'betterme-arch',
-        title: 'Platform Architecture & End-to-End Flow',
-        description: 'Interactive system topology showing multi-platform clients (Android Compose & Chrome MV3), Axum/Tokio async Rust ingestion, PostgreSQL/SQLite storage, and KinD Kubernetes deployment.',
+        title: 'Platform Architecture & Kubernetes Topology',
+        description: 'Interactive system topology with multi-platform clients (Android Compose & Chrome MV3), Cilium CNI Ingress & mTLS, Axum/Tokio async Rust backend, PostgreSQL storage, Log Collector, and Tetragon eBPF security monitoring with CVE Scanner.',
         src: '/diagrams/betterme-architecture.html',
         imageSrc: '/diagrams/betterme-architecture.png',
       },
@@ -103,7 +103,7 @@ export const featuredProjects = [
       {
         id: 'primavera-arch',
         title: 'Production Kubernetes & Services Architecture',
-        description: 'Comprehensive cluster layout on host .61: Cloudflare Tunnel, Ingress controller, Go Gin backend, authentication service, DB management UI, multiplayer engine, PostgreSQL, Qdrant vector database, HashiCorp Vault, n8n automations, and Prometheus monitoring.',
+        description: 'Comprehensive cluster layout on host .61: Cloudflare Tunnel, Cilium CNI Ingress & mTLS, Go Gin backend, AI Speech Engine, Qdrant vector DB, Multiplayer Engine, PostgreSQL, Log Collector, and Tetragon eBPF security monitoring with CVE Scanner and Telegram alerting.',
         src: '/diagrams/primavera-architecture.html',
         imageSrc: '/diagrams/primavera-architecture.png',
       },
