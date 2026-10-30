@@ -84,13 +84,10 @@ export default function PrintableCV({ onClose }) {
           </div>
 
           {/* Interactive portfolio callout banner */}
-          <div className="mt-4 p-3 bg-teal-50/70 border border-teal-200/80 rounded-lg flex items-center justify-between gap-3">
-            <div className="text-xs text-teal-950">
-              <span className="font-semibold text-teal-900">Interactive live portfolio & architecture diagrams:</span>
-              <span className="text-slate-600 block sm:inline sm:ml-1.5">
-                Explore comprehensive architecture overviews, live services, and source code at:
-              </span>
-            </div>
+          <div className="mt-3 py-2 px-3 bg-teal-50/70 border border-teal-200/80 rounded-lg flex items-center justify-between gap-3">
+            <span className="text-xs font-semibold text-teal-950">
+              Interactive live portfolio & architecture diagrams:
+            </span>
             <a
               href={personalData.portfolioUrl}
               target="_blank"

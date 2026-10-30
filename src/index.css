@@ -209,13 +209,15 @@ ul { margin: 0; padding-left: 1.2rem; }
 @media print {
   @page {
     size: A4;
-    margin: 12mm 15mm 15mm 15mm;
+    margin: 0;
   }
   body {
     background: white !important;
     color: #182322 !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   .no-print { display: none !important; }
   .cv-modal {
@@ -230,7 +232,7 @@ ul { margin: 0; padding-left: 1.2rem; }
     inset: auto !important;
   }
   .print-container {
-    padding: 0 !important;
+    padding: 12mm 15mm 15mm 15mm !important;
     margin: 0 !important;
     max-width: 100% !important;
     box-shadow: none !important;
