@@ -207,9 +207,60 @@ ul { margin: 0; padding-left: 1.2rem; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 @media print {
-  body { background: white !important; color: #182322 !important; }
+  @page {
+    size: A4;
+    margin: 12mm 15mm 15mm 15mm;
+  }
+  body {
+    background: white !important;
+    color: #182322 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
   .no-print { display: none !important; }
-  .cv-modal { position: static !important; height: auto; overflow: visible; padding: 0; background: white; }
-  .print-container { padding: 0 !important; margin: 0 !important; max-width: 100% !important; box-shadow: none !important; }
-  a { color: #182322 !important; }
+  .cv-modal {
+    position: static !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    background: white !important;
+    border: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    inset: auto !important;
+  }
+  .print-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  /* Prevent breaks inside sections and items */
+  .print-avoid-break {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  .print-header {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  /* Fixed footer on every printed page for GDPR */
+  .print-gdpr-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding-top: 4px;
+    font-size: 8px !important;
+    line-height: 1.2 !important;
+    color: #94a3b8 !important;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+  }
 }

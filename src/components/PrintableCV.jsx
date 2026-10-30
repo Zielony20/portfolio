@@ -40,7 +40,7 @@ export default function PrintableCV({ onClose }) {
       {/* Printable Paper A4 Page Container */}
       <div className="max-w-4xl mx-auto bg-white text-slate-900 rounded-xl p-8 sm:p-12 print-container print:shadow-none print:p-0 print:m-0 print:max-w-full">
         {/* Header */}
-        <div className="border-b border-slate-200 pb-6 mb-6">
+        <div className="border-b border-slate-200 pb-5 mb-5 print-header">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
               <h1 className="text-3xl font-bold text-slate-900 tracking-tight">
@@ -112,14 +112,14 @@ export default function PrintableCV({ onClose }) {
           {/* Main Column (2/3 width) - Work Experience & Key Projects */}
           <div className="md:col-span-2 space-y-6">
             {/* Experience Section */}
-            <div>
+            <div className="print-avoid-break">
               <h2 className="text-xs font-bold uppercase tracking-wider text-slate-400 border-b border-slate-200 pb-1 mb-3">
                 Work experience
               </h2>
 
               <div className="space-y-4">
                 {experienceTimeline.map((exp, idx) => (
-                  <div key={idx}>
+                  <div key={idx} className="print-avoid-break">
                     <div className="flex justify-between items-baseline mb-0.5">
                       <span className="font-bold text-sm text-slate-900">{exp.role}</span>
                       <span className="text-xs font-mono text-slate-500">{exp.period}</span>
@@ -143,14 +143,14 @@ export default function PrintableCV({ onClose }) {
             </div>
 
             {/* Featured Projects Section */}
-            <div>
+            <div className="print-avoid-break">
               <h2 className="text-xs font-bold uppercase tracking-wider text-slate-400 border-b border-slate-200 pb-1 mb-3">
                 Featured projects
               </h2>
 
               <div className="space-y-3">
                 {featuredProjects.map((proj) => (
-                  <div key={proj.id} className="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                  <div key={proj.id} className="bg-slate-50 p-3 rounded-lg border border-slate-100 print-avoid-break">
                     <div className="font-bold text-xs text-slate-900">{proj.title}</div>
                     <div className="text-xs text-slate-600 mb-1">{proj.cvDescription || proj.description}</div>
                     <div className="text-xs font-mono text-teal-900">
@@ -165,14 +165,14 @@ export default function PrintableCV({ onClose }) {
           {/* Side Column (1/3 width) - Education & Skills */}
           <div className="space-y-6">
             {/* Education Section */}
-            <div>
+            <div className="print-avoid-break">
               <h2 className="text-xs font-bold uppercase tracking-wider text-slate-400 border-b border-slate-200 pb-1 mb-3">
                 Education
               </h2>
 
               <div className="space-y-3">
                 {educationHistory.map((edu, idx) => (
-                  <div key={idx}>
+                  <div key={idx} className="print-avoid-break">
                     <div className="font-bold text-xs text-slate-900">{edu.degree}</div>
                     <div className="text-xs font-semibold text-slate-700">{edu.school}</div>
                     <div className="text-xs text-slate-500 font-mono mb-1">{edu.period} | {edu.specialty}</div>
@@ -187,14 +187,14 @@ export default function PrintableCV({ onClose }) {
             </div>
 
             {/* Skills Summary */}
-            <div>
+            <div className="print-avoid-break">
               <h2 className="text-xs font-bold uppercase tracking-wider text-slate-400 border-b border-slate-200 pb-1 mb-3">
                 Skills
               </h2>
 
               <div className="space-y-3">
                 {skillsCategories.map((cat, idx) => (
-                  <div key={idx}>
+                  <div key={idx} className="print-avoid-break">
                     <div className="text-xs font-bold text-slate-800 mb-1">{cat.title}</div>
                     <div className="flex flex-wrap gap-1">
                       {cat.skills.map((skill) => (
@@ -210,8 +210,8 @@ export default function PrintableCV({ onClose }) {
           </div>
         </div>
 
-        {/* GDPR Clause */}
-        <div className="mt-8 pt-4 border-t border-slate-200 text-xs text-slate-400 leading-tight text-center">
+        {/* GDPR Clause - Displayed at bottom on screen and fixed footer on each printed page */}
+        <div className="mt-8 pt-4 border-t border-slate-200 text-xs text-slate-400 leading-tight text-center print-gdpr-footer">
           I consent to the processing of my personal data for recruitment purposes in accordance with Regulation (EU) 2016/679 (GDPR).
         </div>
       </div>
