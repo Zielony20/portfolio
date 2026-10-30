@@ -6,7 +6,7 @@ const slides = [
     id: 'about',
     label: 'About me',
     title: 'Backend, DevOps & cloud-native security.',
-    description: 'Since February 2023, I have worked on cybersecurity projects at Nokia. I combine backend engineering in Go, Java and Rust with Kubernetes, Helm, Terraform, and n8n automations. I focus on resilient microservices, container orchestration, least-privilege security, and robust telemetry.',
+    description: 'Since February 2023, I have worked on cybersecurity projects at Nokia. I combine backend engineering in Go and Java with Kubernetes, Helm, Terraform, and cloud infrastructure. I focus on resilient microservices, container orchestration, least-privilege security, and robust telemetry.',
     href: '#experience',
     linkLabel: 'Explore my experience & skills',
   },
