@@ -20,11 +20,11 @@ const slides = [
   },
   {
     id: 'betterme',
-    label: 'BetterMe',
+    label: 'VeraMind',
     title: 'Personal focus & habit platform with local AI.',
-    description: 'I created BetterMe to help regain digital focus: it blocks online distractions and short-form video (Reels, Shorts), tracks deep-work sessions, and monitors daily screen-time rhythms. Built with an asynchronous Rust backend, a modern React dashboard, and the local Laya AI model (Ollama) for on-premise content classification.',
+    description: 'I created VeraMind to help regain digital focus: it blocks online distractions and short-form video (Reels, Shorts), tracks deep-work sessions with Task Spotlight, and monitors daily screen-time rhythms. Built with an asynchronous Rust backend, a modern React dashboard, and a local ONNX AI model for on-premise content classification.',
     href: '#projects',
-    linkLabel: 'Explore BetterMe architecture',
+    linkLabel: 'Explore VeraMind architecture',
   },
 ];
 

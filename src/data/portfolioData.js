@@ -9,11 +9,11 @@ export const personalData = {
   linkedin: 'https://www.linkedin.com/in/piotr-sikora/',
   github: 'https://github.com/Zielony20',
   portfolioUrl: 'https://zielony20.github.io/portfolio',
-  bio: 'Since February 2023, I have worked as a Fullstack software engineer at Nokia on cybersecurity projects, developing microservices and cloud infrastructure tooling in Go, Java and Python. In parallel, I am the creator of the bienvenidosprimavera.pl platform (with event-driven n8n workflow automations) and BetterMe, a personal focus and digital wellness platform powered by an asynchronous Rust backend, React dashboard, and local Laya AI classification.',
+  bio: 'Since February 2023, I have worked as a Fullstack software engineer at Nokia on cybersecurity projects, developing microservices and cloud infrastructure tooling in Go, Java and Python. In parallel, I am the creator of the bienvenidosprimavera.pl platform (with event-driven n8n workflow automations) and VeraMind, a personal focus and digital wellness platform powered by an asynchronous Rust backend, React dashboard, and local ONNX / AI topic classification.',
   stats: [
     { label: 'PrimaVera users', value: '~40' },
     { label: 'PrimaVera & automation', value: 'Go / PostgreSQL / n8n' },
-    { label: 'BetterMe platform', value: 'Rust / React / Laya AI' },
+    { label: 'VeraMind platform', value: 'Rust / React / ONNX AI' },
     { label: 'Nokia experience', value: 'Cybersecurity & cloud' },
   ],
 };
@@ -106,18 +106,18 @@ export const featuredProjects = [
   },
   {
     id: 'better-me',
-    title: 'BetterMe | Personal focus & digital wellness platform',
-    subtitle: 'A full-stack ecosystem with an async Rust backend, React dashboard, and local Laya AI classification',
+    title: 'VeraMind | Personal focus & digital wellness platform',
+    subtitle: 'A full-stack ecosystem with an async Rust backend, React dashboard, and local ONNX AI classification',
     category: 'Backend · Rust · React · Local AI',
-    description: 'I created BetterMe to help users regain deep focus and control over digital habits with total privacy. The platform blocks short-form video (Reels, Shorts) and distracting websites across browsers and mobile devices, organizes golden hours (deep-work sessions), and monitors daily activity rhythms. It is built with an asynchronous Rust backend (Axum/Tokio), a modern React web dashboard, and an on-premise Laya AI model (Ollama) for private content classification.',
+    description: 'I created VeraMind to help users regain deep focus and control over digital habits with total privacy. The platform blocks short-form video (Reels, Shorts) and distracting websites across browsers and mobile devices, organizes golden hours (deep-work sessions) with Task Spotlight, and monitors daily activity rhythms. It is built with an asynchronous Rust backend (Axum/Tokio), a modern React web dashboard, and an on-premise ONNX neural classifier for private topic blocking.',
     status: 'My own active platform',
     link: 'https://bienvenidosprimavera.online',
     linkLabel: 'Visit bienvenidosprimavera.online',
-    cvDescription: 'Designed and implemented the complete BetterMe ecosystem: high-performance asynchronous Rust backend (Axum, Tokio, SQLx, PostgreSQL), local Laya AI decision model (Ollama) for on-premise content classification, React/TypeScript dashboard, native Android companion application, Chrome extension, and automated KinD/Kubernetes safe deployment.',
+    cvDescription: 'Designed and implemented the complete VeraMind ecosystem: high-performance asynchronous Rust backend (Axum, Tokio, SQLx, PostgreSQL), local ONNX neural network decision model for on-premise content classification, React/TypeScript dashboard with Focus & Task Spotlight mode, native Android companion application with AccessibilityService, Chrome extension, and automated KinD/Kubernetes safe deployment.',
     highlights: [
-      'High-throughput asynchronous Rust backend with Axum, Tokio, and SQLx handling continuous activity streams.',
-      'On-premise AI topic classification using the local Laya model (Ollama) ensuring zero data leakage to external clouds.',
-      'Modern React web dashboard combined with native Android (Compose) and Chrome MV3 companion clients.',
+      'High-throughput asynchronous Rust backend with Axum, Tokio, and SQLx handling continuous activity streams and guardian invitations.',
+      'On-premise AI topic classification using a local ONNX model ensuring zero data leakage to external clouds.',
+      'Modern React web dashboard with Task Spotlight and Lo-Fi player, combined with native Android (Compose) and Chrome MV3 companion clients.',
     ],
     diagrams: [
       {
@@ -167,7 +167,7 @@ export const featuredProjects = [
       },
     ],
     publicScopeNote: 'Full-stack platform created and actively maintained by Piotr Sikora-Malach.',
-    tags: ['Rust', 'Axum', 'Tokio', 'SQLx', 'PostgreSQL', 'Laya AI', 'Ollama', 'React', 'TypeScript', 'Tailwind CSS', 'Android', 'Kotlin', 'Jetpack Compose', 'WorkManager', 'Docker', 'Kubernetes', 'KinD', 'Chrome extension', 'REST API'],
+    tags: ['Rust', 'Axum', 'Tokio', 'SQLx', 'PostgreSQL', 'ONNX AI', 'Ollama', 'React', 'TypeScript', 'Tailwind CSS', 'Android', 'Kotlin', 'Jetpack Compose', 'WorkManager', 'Docker', 'Kubernetes', 'KinD', 'Chrome extension', 'REST API'],
   },
 ];
 
