@@ -12,13 +12,17 @@ export function ProfileCardCarousel({ profile, slides }) {
   return (
     <div className="profile-carousel" aria-roledescription="carousel" aria-label="Professional profile">
       <div className="profile-layout">
-        <figure className="profile-image">
-          <img src={`${import.meta.env.BASE_URL}${profile.photo}`} alt={profile.photoAlt} width="185" height="190" fetchPriority="high" />
-        </figure>
         <article className="profile-card">
-          <p className="eyebrow">{profile.title}</p>
-          <h1>{profile.name}</h1>
-          <p className="profile-location">{profile.location} <span aria-hidden="true">·</span> English B2</p>
+          <div className="profile-header">
+            <figure className="profile-image">
+              <img src={`${import.meta.env.BASE_URL}${profile.photo}`} alt={profile.photoAlt} width="185" height="190" fetchPriority="high" />
+            </figure>
+            <div className="profile-identity">
+              <p className="eyebrow">{profile.title}</p>
+              <h1>{profile.name}</h1>
+              <p className="profile-location">{profile.location} <span aria-hidden="true">·</span> English B2</p>
+            </div>
+          </div>
           <div className="profile-slide" key={current.id} aria-live="polite" aria-atomic="true">
             <h2>{current.title}</h2>
             <p>{current.description}</p>
