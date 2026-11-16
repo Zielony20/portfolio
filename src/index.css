@@ -52,9 +52,9 @@ ul { margin: 0; padding-left: 1.2rem; }
 .menu-toggle { display: none; }
 .hero-section { padding: 66px 0 56px; }
 .profile-carousel { max-width: 920px; margin-inline: auto; }
-.profile-layout { display: grid; grid-template-columns: 192px minmax(0, 1fr); gap: 36px; align-items: start; }
-.profile-image { width: 192px; height: 192px; padding: 8px; border-radius: var(--card-radius); overflow: hidden; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 18px 38px -22px #244e4640; }
-.profile-image img { width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: calc(var(--card-radius) - 8px); border: 1px solid var(--soft); }
+.profile-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 40px; align-items: center; }
+.profile-image { width: 240px; height: 240px; padding: 10px; border-radius: var(--card-radius); overflow: hidden; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 18px 38px -22px #244e4640; }
+.profile-image img { width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: calc(var(--card-radius) - 10px); border: 1px solid var(--soft); }
 .profile-card { position: relative; background: var(--surface); padding: 40px; border-radius: var(--card-radius); border: 1px solid var(--line); box-shadow: 0 26px 55px -25px #33413928; }
 .profile-card .eyebrow { font-size: 14px; letter-spacing: 0; margin-bottom: 12px; }
 .profile-card h1 { font-size: clamp(28px, 3.1vw, 41px); line-height: 1.14; letter-spacing: -.035em; font-weight: 600; }
