@@ -2,8 +2,8 @@ export const personalData = {
   name: 'Piotr Sikora-Malach',
   title: 'Backend & systems engineer (Go / Java) | DevOps, cloud & automation',
   location: 'Poznań, Poland',
-  photo: 'profile-placeholder.svg',
-  photoAlt: 'Profile photo placeholder to be replaced with a personal photograph',
+  photo: 'profile-photo.png',
+  photoAlt: 'Portrait of Piotr Sikora-Malach',
   email: 'piotrsikora98@gmail.com',
   phone: '+48 697 358 952',
   linkedin: 'https://www.linkedin.com/in/piotr-sikora/',
@@ -204,6 +204,10 @@ export const skillsCategories = [
   {
     title: 'Observability',
     skills: ['OpenTelemetry / OTel', 'Micrometer', 'Prometheus', 'Grafana'],
+  },
+  {
+    title: 'Web & CMS',
+    skills: ['WordPress', 'React', 'TypeScript', 'Tailwind CSS', 'Drupal CMS'],
   },
 ];
 
